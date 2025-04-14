@@ -434,6 +434,7 @@ textarea {
 
 
 input[type="file"] {
+  margin-bottom: 16px; /* отступ снизу */
   width: 100%;
   padding: 8px;
   background-color: white;
