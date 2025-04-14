@@ -434,12 +434,26 @@ textarea {
 
 
 input[type="file"] {
-  margin-bottom: 16px; /* отступ снизу */
   width: 100%;
-  padding: 8px;
-  background-color: white;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 16px;
-  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  opacity: 0.8;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #0d1a47;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0a1635;
 }
