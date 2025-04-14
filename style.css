@@ -436,12 +436,13 @@ textarea {
 input[type="file"] {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #000;  /* Чёрная граница */
   border-radius: 6px;
   font-size: 16px;
   background-color: #fff;
   color: #333;
-  opacity: 0.8;
+  opacity: 0.9;
+  margin-bottom: 20px; /* Отступ вниз от кнопки */
 }
 
 input[type="file"]::file-selector-button {
