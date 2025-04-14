@@ -482,3 +482,33 @@ input[type="file"]::file-selector-button:hover {
     gap: 8px;
   }
 }
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 10px 15px; /* уменьшаем внутренние отступы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
