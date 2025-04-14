@@ -5,25 +5,13 @@ body {
     padding: 0;
   }
   
-.hero {
-    background-color: #ffffff;
+  .hero {
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-    margin: 1px auto;
+    margin: 2px auto;
     max-width: 1200px;
-  }
-  
-  .upload-btn:hover,
-  .submit-btn:hover {
-    opacity: 0.9;
-    transition: 0.3s;
-  }
-  
-  .upload-btn:active,
-  .submit-btn:active {
-    transform: scale(0.98);
-  }
-  .hero {
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -115,15 +103,12 @@ body {
     gap: 40px;
   }
   
-  .why-text {
-    max-width: 600px;
-  }
-  
+    
   .why-text h2 {
-    font-size: 20px;
-    color: #222;
+    font-size: 40px;
+    color: hwb(#0d1a47);
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   
   .why-text h1 {
@@ -144,10 +129,7 @@ body {
     align-items: center;
   }
   
-  .icon {
-    font-size: 20px;
-    margin-right: 10px;
-  }
+
   
   .why-image img {
     max-width: 360px;
@@ -237,6 +219,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 280px;
+    margin-top: 0;
   }
   
   .services-photo img {
@@ -270,12 +253,12 @@ body {
   }
   
   .services-list strong {
-    font-size: 16px;
+    font-size: 22px;
     color: #000;
   }
   
   .services-list small {
-    font-size: 14px;
+    font-size: 19px;
     color: #444;
   }
   
@@ -334,5 +317,92 @@ body {
   
     .learn-more {
       font-size: 15px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+
+
+
+
+
+
+
+  section {
+    padding: 80px 20px; /* 80px сверху и снизу, 20px слева и справа */
+    border-bottom: 2px solid #e0e0e0; /* тонкая серая линия между секциями */
+  }
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .hero-text,
+    .form {
+      max-width: 100%;
+    }
+  
+    .why-choose-us {
+      flex-direction: column;
+    }
+  
+    .why-text,
+    .why-image {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .why-image img {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .services-section {
+      flex-direction: column;
+    }
+  
+    .services-text,
+    .services-photo {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .services-photo img {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .icon {
+      width: 32px;
+      margin-right: 8px;
+    }
+  
+    nav.main-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
     }
   }

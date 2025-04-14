@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Express Junk Removal</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Junk Removal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 <body>
   <header class="site-header">
     <div class="logo-container">
@@ -30,28 +36,61 @@
       </ul>
     </div>
   
+
+
+
     <div class="form">
       <h3>Ready to get rid of junk? Fill out the form — we'll call you back:</h3>
-      <input type="text" placeholder="Your Name">
-      <input type="text" placeholder="Address / City">
-      <input type="text" placeholder="What needs to be removed?">
-      <input type="file">
+    
+      <label>
+        Your Name:
+        <input type="text" placeholder="Your Name" title="Enter your name" required>
+      </label>
+    
+      <label>
+        Address / City:
+        <input type="text" placeholder="Address / City" title="Enter your address" required>
+      </label>
+    
+      <label>
+        What needs to be removed?
+        <input type="text" placeholder="What needs to be removed?" title="Describe what needs to be removed" required>
+      </label>
+    
+      <label>
+        Upload a photo (optional):
+        <input type="file" title="Upload a photo of the junk">
+      </label>
+    
       <button class="submit-btn">Get a Free Quote</button>
     </div>
+
+
   </div>
   <section class="why-choose-us">
     <div class="why-text">
-      <h2>WHY CHOOSE US?</h2>
-      <h1>Express Junk Removal</h1>
+      <h2 data-aos="fade-up">WHY CHOOSE US?</h2>
       <ul class="reasons">
-        <li><span class="icon">🕒</span><strong>Punctuality</strong> - Arriving right on time</li>
-        <li><span class="icon">☑️</span><strong>Cleanliness</strong> - Removing debris neatly, no mess</li>
-        <li><span class="icon">💲</span><strong>Transparency</strong> - Prices are fixed, no surprises</li>
-        <li><span class="icon">🙂</span><strong>Courtesy</strong> - Uniformed and polite, as it should be</li>
+        <li>
+          <img src="icons/icon-clock.png" alt="Punctuality" class="icon" />
+          <strong>Punctuality</strong> – Arriving right on time
+        </li>
+        <li>
+          <img src="icons/icon-clean.png" alt="Cleanliness" class="icon" />
+          <strong>Cleanliness</strong> – Removing debris neatly, no mess
+        </li>
+        <li>
+          <img src="icons/icon-price.png" alt="Transparency" class="icon" />
+          <strong>Transparency</strong> – Prices are fixed, no surprises
+        </li>
+        <li>
+          <img src="icons/icon-smile.png" alt="Courtesy" class="icon" />
+          <strong>Courtesy</strong> – Uniformed and polite, as it should be
+        </li>
       </ul>
     </div>
     <div class="why-image">
-      <img src="employee.png" alt="Employee loading box into container">
+      <img src="employee.png" alt="Employee loading box into container" />
     </div>
   </section>
 
@@ -62,7 +101,7 @@
 
   <section class="services-section">
     <div class="services-text">
-      <h2>WHAT WE PROVIDE:</h2>
+      <h2 data-aos="fade-up">WHAT WE PROVIDE:</h2>
       <ul class="services-list">
         <li>
           <span class="icon">🛋️</span>
@@ -105,6 +144,14 @@
       <img src="1employee.png" alt="Our employee smiling and loading box">
     </div>
   </section>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 
