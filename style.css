@@ -458,3 +458,27 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
   background-color: #0a1635;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .site-logo {
+    width: 120px; /* уменьшаем логотип */
+  }
+
+  .main-nav a {
+    font-size: 14px; /* уменьшаем размер текста меню */
+    margin-left: 10px; /* уменьшаем расстояние между пунктами */
+  }
+
+  .main-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
