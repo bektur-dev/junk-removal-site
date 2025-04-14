@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+.hero {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    margin: 1px auto;
+    max-width: 1200px;
+  }
+  
+  .upload-btn:hover,
+  .submit-btn:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  
+  .upload-btn:active,
+  .submit-btn:active {
+    transform: scale(0.98);
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #0d1a47;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .upload-btn {
+    background-color: #2d5fff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .features li::before {
+    content: "✓ ";
+    color: green;
+  }
+  
+  .form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 360px;
+    width: 100%;
+  }
+  
+  .form h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  .why-choose-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .why-text {
+    max-width: 600px;
+  }
+  
+  .why-text h2 {
+    font-size: 20px;
+    color: #222;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .why-text h1 {
+    font-size: 36px;
+    color: #0d1a47;
+    margin-bottom: 30px;
+  }
+  
+  .reasons {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .reasons li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .why-image img {
+    max-width: 360px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+
+
+
+
+
+
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 85px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-logo {
+    height: 185px;
+    object-fit: contain;
+  }
+  
+  .main-nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #0d1a47;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
