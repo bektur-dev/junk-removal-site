@@ -361,13 +361,20 @@ body {
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
-      padding: 20px;
+      padding: 20px 15px; /* меньше слева и справа */
+      margin: 0 auto;
+      max-width: 100%;
+      box-sizing: border-box;
     }
   
-    .hero-text,
-    .form {
-      max-width: 100%;
+  
+  @media (max-width: 768px) {
+    .form,
+    .hero-text {
+      width: 100%;
+      box-sizing: border-box;
     }
+  }
   
     .why-choose-us {
       flex-direction: column;
