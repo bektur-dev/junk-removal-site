@@ -163,6 +163,9 @@ body {
 
 
 
+
+
+
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -194,5 +197,96 @@ body {
   }
   
   .main-nav a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .services-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    background: #fff;
+    gap: 40px;
+  }
+  
+  .services-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .services-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+  }
+  
+  .services-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .services-text h2 {
+    font-size: 28px;
+    color: #0d1a47;
+    margin-bottom: 30px;
+  }
+  
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .services-list .icon {
+    font-size: 28px;
+    margin-right: 15px;
+    line-height: 1;
+  }
+  
+  .services-list strong {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .services-list small {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0d1a47;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .learn-more:hover {
     text-decoration: underline;
   }
