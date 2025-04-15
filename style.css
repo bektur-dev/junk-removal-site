@@ -153,55 +153,6 @@ body {
 
 
 
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px 85px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .site-logo {
-    height: 185px;
-    object-fit: contain;
-  }
-  
-  .main-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #0d1a47;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
-  .main-nav a:hover {
-    text-decoration: underline;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .services-section {
     display: flex;
     align-items: flex-start;
@@ -457,52 +408,101 @@ input[type="file"]::file-selector-button {
 }
 
 input[type="file"]::file-selector-button:hover {
-  background-color: #0a1635; /* чуть темнее при наведении */
+  background-color: #0a1635; } /* чуть темнее при наведении */
+
+
+
+
+
+
+/* === ОБЩИЕ СТИЛИ ШАПКИ === */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 85px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  height: 185px;
+  object-fit: contain;
+}
+
+#mainNav {
+  display: flex;
+  gap: 20px;
+}
+
+#mainNav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #0d1a47;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#mainNav a:hover {
+  text-decoration: underline;
+}
+
+/* === КНОПКА-БУРГЕР === */
+.burger {
+  display: none;
+  background: none;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  color: #0d1a47;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
+/* === МОБИЛЬНАЯ ВЕРСИЯ === */
+@media (max-width: 768px) {
   .site-header {
-    padding: 10px 10px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: 10px 10px;
   }
 
   .site-logo {
-    width: 120px; /* уменьшаем логотип */
+    width: 120px;
   }
 
   .logo-container {
     margin-bottom: 5px;
   }
 
-  .main-nav {
-    display: flex;
+  #mainNav {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    align-items: flex-start;
   }
 
-  .main-nav a {
+  #mainNav.show {
+    display: flex;
+  }
+
+  #mainNav a {
     font-size: 14px;
     padding: 4px 8px;
-    margin-left: 0; /* убираем лишний отступ */
+    margin-left: 0;
+  }
+
+  .burger {
+    display: block;
   }
 }

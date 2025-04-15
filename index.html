@@ -15,8 +15,9 @@
   <header class="site-header">
     <div class="logo-container">
       <img src="logo.png" alt="Express Junk Removal by SAM" class="site-logo">
+      <button class="burger" onclick="toggleMenu()">&#9776;</button>
     </div>
-    <nav class="main-nav">
+    <nav id="mainNav" class="main-nav">
       <a href="#">ABOUT</a>
       <a href="#">SERVICES</a>
       <a href="#">CONTACT</a>
@@ -151,6 +152,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("show");
+  }
 </script>
 </body>
 </html>
